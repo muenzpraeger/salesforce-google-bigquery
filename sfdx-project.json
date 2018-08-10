@@ -1,0 +1,18 @@
+{
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "default": true,
+            "package": "Google BigQuery Example",
+            "versionName": "Version 0.1",
+            "versionNumber": "0.1.0.NEXT"
+        }
+    ],
+    "namespace": "",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "43.0",
+    "packageAliases": {
+        "Google BigQuery Example": "0Ho1I000000XZCwSAO",
+        "Google BigQuery Example@0.1.0-2": "04t1I0000036sRFQAY"
+    }
+}

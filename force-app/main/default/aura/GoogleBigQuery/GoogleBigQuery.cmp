@@ -1,0 +1,31 @@
+<aura:component implements="force:appHostable" controller="GoogleUiController">
+
+    <aura:attribute name="bigQuerySql" type="String" default="SELECT * FROM OrderHistory.Salesforce" />
+    <aura:attribute name="columns" type="List" />
+    <aura:attribute name="rows" type="Object" default="nada" />
+
+    <div class="slds-card" style="padding:10px">
+
+        <lightning:layout verticalAlign="center" pullToBoundary="small">
+
+            <lightning:layoutItem flexibility="auto" padding="around-small">
+                <lightning:input variant="label-hidden" type="text" value="{!v.bigQuerySql}"></lightning:input>
+            </lightning:layoutItem>
+
+            <lightning:layoutItem flexibility="auto, no-grow" padding="around-small">
+                <lightning:button name="Run query" title="Run query" onclick="{!c.onRunQuery}">Run query</lightning:button>
+            </lightning:layoutItem>
+
+        </lightning:layout>
+
+        <br /><br />
+
+        <lightning:datatable keyField="id" data="{!v.rows}" columns="{!v.columns}" hideCheckboxColumn="true"></lightning:datatable>
+
+    </div>
+
+    <aura:if isTrue="{!empty(v.rows)}">
+        <lightning:spinner title="Loading" />
+    </aura:if>
+
+</aura:component>
