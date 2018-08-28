@@ -90,3 +90,4 @@ From the JSON file of your service account credentials you'll need the *client_e
 1. Save the record.
 1. Select **BigQuery Demo** in the App Launcher.
 
+The Apex classes [Futures](https://github.com/muenzpraeger/salesforce-google-bigquery/blob/master/force-app/main/default/classes/Futures.cls#L8) and [GoogleUiController](https://github.com/muenzpraeger/salesforce-google-bigquery/blob/master/force-app/main/default/classes/GoogleUiController.cls#L5) have to be updated with your specific BigQuery project ID.
