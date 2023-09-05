@@ -4,7 +4,7 @@
     <aura:attribute name="columns" type="List" />
     <aura:attribute name="rows" type="Object" default="nada" />
 
-    <div class="slds-card" style="padding:10px">
+    <div class="slds-card" style="padding:20px">
 
         <lightning:layout verticalAlign="center" pullToBoundary="small">
 
